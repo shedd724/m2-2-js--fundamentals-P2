@@ -20,14 +20,31 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function findArmstrongNumbers(num1, num2) {
-  // num1 and num2 are Numbers
-}
+  // num1 and num2 are Numberslet ans = [];
+  const Armstrong = n => {
+    let arr = n.toString().split("").map(el => parseInt(el))
+    let sumn = 0;
+    for (let i = 0; i <= arr.length - 1; i++) {
+      sumn += arr[i] ** arr.length;
+    }
+      return sumn;
+    }
+    for(let idx = num1; idx <= num2; idx++){
+      let anumber = Armstrong(idx);
+        if(anumber === idx){
+          ans.push(idx)
+        }
+    }
+    return ans
+}	
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 console.log(findArmstrongNumbers(0, 1000000));
 
 // Create more test cases.
+console.log(findArmstrongNumbers(0, 10000));
+console.log(findArmstrongNumbers(0, 1000));
 
 // This is needed for automated testing (more on that later)
 module.exports = findArmstrongNumbers;

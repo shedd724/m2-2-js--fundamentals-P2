@@ -11,6 +11,8 @@
 // -----------------------------------------------------------------
 function arrOFNames(string) {
   // complete the function
+    return str.split(",");
+    
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -25,6 +27,17 @@ console.log(
   )
 );
 // Create more test examples.
+console.log(
+  arrOFNames(
+    "Simple Rick, Slow Rick"
+  )
+);
+
+console.log(
+  arrOFNames(
+    "Past Rick, Replacement Rick, Rick C-137"
+  )
+);
 
 // This is needed for automated testing (more on that later)
 module.exports = arrOFNames;

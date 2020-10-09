@@ -12,7 +12,24 @@
 // -----------------------------------------------------------------
 function findNumbers(num1, num2) {
   // num1 and num2 are Numbers
-}
+  let ans = [];
+  const sumOfCubes = n => {
+    let arr = n.toString().split("").map(el => parseInt(el))
+    let sumn = 0;
+    for (let i = 0; i <= arr.length - 1; i++) {
+      sumn += arr[i] ** 3;
+    }
+      return sumn;
+    }
+    for(let idx = num1; idx <= num2; idx++){
+      let sumOC = sumOfCubes(idx);
+        if(sumOC === idx){
+          ans.push(idx)
+        }
+    }
+
+    return ans
+  }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

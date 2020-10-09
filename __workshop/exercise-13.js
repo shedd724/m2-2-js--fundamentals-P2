@@ -7,11 +7,17 @@
 // -----------------------------------------------------------------
 function countBs(str) {
   // str is a string
-}
+  
+  return str.split("").filter(ch => ch === 'B').length
+}	
+
+console.log(countBs("deBate"))
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 // Create more test cases.
-
+console.log(countBs("Brave"))
+console.log(countBs("Beautiful"))
+console.log(countBs("bumBBleBee"))
 // This is needed for automated testing (more on that later)
 module.exports = countBs;

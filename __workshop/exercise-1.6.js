@@ -10,8 +10,14 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeStringFromArray(array, string) {
-  // complete the function
-}
+  // complete the function	
+  function notString(item){
+    return ( item != string)
+  }
+  
+  newArray = array.filter(notString);
+  return newArray;
+ } 
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

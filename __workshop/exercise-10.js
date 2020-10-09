@@ -9,11 +9,17 @@
 // -----------------------------------------------------------------
 function allLong(list) {
   // list is an array of strings
+  return list.every(function (a) {
+    return (a.length > 4);
+  });
 }
+
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 // Create more test cases.
+console.log(allLong(["Cyborg", "Robin", "Batman", "Superman", "Aquaman", "Flash"]));
+console.log(allLong(["cat", "dog", "mole"]));
 
 // This is needed for automated testing (more on that later)
 module.exports = allLong;

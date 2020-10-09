@@ -17,6 +17,13 @@
 function every(arr, func) {
   // arr is an array and f is a function
   // func takes 1 argument and returns a boolean
+  let ans = [];
+  for(let idx = 0; idx <= arr.length - 1; idx++){
+    if(func(arr[idx])){
+      ans.push(arr[idx])
+    }
+  }
+  return ans.length === arr.length
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

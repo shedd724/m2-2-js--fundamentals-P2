@@ -7,6 +7,7 @@
 // -----------------------------------------------------------------
 function itemIsPresent(array, item) {
   // code here
+  return array.includes(item);
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

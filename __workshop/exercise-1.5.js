@@ -14,6 +14,13 @@
 // -----------------------------------------------------------------
 function decodeMessage(string, notCode) {
   // complete the function
+  for (let i = 0; i < notCode.length; i++){
+
+    arrayString = string.split(notCode[i]);
+    let newArray = arrayString[0] + arrayString[1];
+    string = newArray;
+    }
+    return string;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
@@ -39,6 +46,22 @@ console.log(
   )
 );
 // Create more test examples.
+console.log(decodeMessage("I anotm tbaconhe queen.", ["not", "bacon"]));
+console.log(
+  decodeMessage(
+    "summerlobaconokfamily ascaryt mintergalactice, I'jerrym quemortybethen of queens!",
+    [
+      "summer",
+      "bacon",
+      "scary",
+      "intergalactic",
+      "jerry",
+      "morty",
+      "beth",
+      "family",
+    ]
+  )
+);
 
 // This is needed for automated testing (more on that later)
 module.exports = decodeMessage;

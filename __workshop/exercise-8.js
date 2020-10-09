@@ -9,13 +9,18 @@
 // -----------------------------------------------------------------
 function greet(list) {
   // list is an array of strings
-}
+  return list.map(function (a) {
+    return ("Hello " + a);
+  });
+}	
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 
 console.log(greet(["David", "Billy", "Lisa", "Jennifer"]));
 
 // Create more test cases.
+
+console.log(greet(["Corazon", "Lisa", "Jennie", "Jennifer"]));
 
 // This is needed for automated testing (more on that later)
 module.exports = greet;
