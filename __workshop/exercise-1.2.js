@@ -9,7 +9,7 @@
 //
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
-function arrOFNames(string) {
+function arrOFNames(str) {
   // complete the function
     return str.split(",");
     

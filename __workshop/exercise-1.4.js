@@ -16,12 +16,20 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function removeMiddleName(string)  {
-let arrayString = string.split(" ");
-let first = arrayString[0];
-let last = arrayString[arrayString.length-1];
-let firstLast = first +" " + last;
-return firstLast
-}
+
+    let arrayString = string.split(" ");
+    let first = arrayString[0];
+    let last = arrayString[arrayString.length-1];
+    let firstLast = first +" " + last;
+    
+    if (arrayString.length === 1){
+    return first;
+    }
+    else{
+    return firstLast;
+    }
+    
+    }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 //

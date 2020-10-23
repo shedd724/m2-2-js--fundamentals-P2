@@ -11,8 +11,7 @@
 function characterCount(string) {
  
   var arrayString = string.split(" ");
-  var string2 = arrayString.join("");
-  return string2.length;
+  return string.length;
   }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
